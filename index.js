@@ -10,5 +10,5 @@ function updateObjectWithKeyAndValue(obj, key, value) {
 // creates a function that clones another object and returns the clone's data
 
 function updateObjectWithKeyAndValue(obj, key, value) {
- return Object.Assign({},{obj},{[key]:value})
+ return Object.Assign({}, obj, {[key]:value})
 }
