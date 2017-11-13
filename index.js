@@ -8,8 +8,13 @@ function updateObjectWithKeyAndValue(obj, key, value) {
 }
 
 
-// creates a function that clones another object and returns the clone's data
+// creates a function that clones another object, updates and returns only the clone's data
 
 function updateObjectWithKeyAndValue(obj, key, value) {
   return Object.assign({},obj, {[key]:value})
+}
+
+function destructivelyUpdateObjectWithKeyAndValue(obj, key, value) {
+  obj.[key] = value;
+  return obj;
 }
