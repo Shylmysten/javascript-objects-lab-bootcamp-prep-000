@@ -8,3 +8,4 @@ function updateObjectWithKeyAndValue(obj, key, value) {
 }
 
 // creates a function that clones another object and returns the clone's data
+
