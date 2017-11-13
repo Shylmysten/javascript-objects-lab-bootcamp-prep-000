@@ -10,6 +10,7 @@ function updateObjectWithKeyAndValue(obj, key, value) {
 // creates a function that clones another object and returns the clone's data
 
 function updateObjectWithKeyAndValue(obj, key, value) {
-  var newRecipes = recipes;
+  var newRecipes = obj;
+  newRecipes[key] = value
   return newRecipes;
 }
