@@ -11,6 +11,8 @@ function updateObjectWithKeyAndValue(obj, key, value) {
 
 function updateObjectWithKeyAndValue(obj, key, value) {
   var newRecipes = obj;
-  newRecipes[key] = value
+  function updateObjectWithKeyAndValue(newRecipes, key, value) {
+    newRecipes[key] = value;
+  }
   return newRecipes;
 }
